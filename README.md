@@ -30,5 +30,7 @@ Prompts are structured to understand:
 ```bash
 git clone https://github.com/yourusername/7chakras.git
 cd 7chakras
+cd frontend
 npm install
 npm run dev
+```
