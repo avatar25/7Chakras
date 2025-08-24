@@ -25,12 +25,28 @@ Prompts are structured to understand:
 - Chakra alignment
 - Suggest reflective practices (breathwork, journaling, action)
 
-## 🚀 Setup (WIP)
+## 🚀 Setup
+
+### Frontend
 
 ```bash
 git clone https://github.com/yourusername/7chakras.git
-cd 7chakras
-cd frontend
+cd 7chakras/frontend
+npm install
+cp .env.example .env # add your VITE_OPENAI_API_KEY
+npm run dev
+```
+
+> The app reads `VITE_OPENAI_API_KEY` from `.env` to access the OpenAI API. If the key is missing, AI features are skipped.
+
+### Optional Backend
+
+To enable syncing or analytics, run the optional Node.js backend in another terminal:
+
+```bash
+cd ../server
 npm install
 npm run dev
 ```
+
+The backend listens on port `3000` by default.
